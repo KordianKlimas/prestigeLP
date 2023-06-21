@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+}
+h1{
+    font-size: 80px;
+    position: absolute;
+    color:rgba(58, 213, 159, 1);
+    font-weight: 900;
+    left:50%;
+    top:10vw;
+    transform: translate(-50%,0);
+    z-index: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#wave1{
+    position: fixed;
+    right:0;
+    left:0;
+    bottom:0;
+}
+#wave2{
+    position: fixed;
+    right:0;
+    left:0;
+    top:0;
+}
+.portfolioPos{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.portfolioBox{
+    z-index: 1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #fff;
+}
+.portfolioBoxIn{
+    display:block;
+    height:500px;
+    width:50vw;
+    flex:1;
+    overflow:hidden;
+    position:relative;
+    transition:all .5s ease;
+}
+.portfolioBoxIn:hover {
+    flex:5;
+}
+.portfolioBoxInImg{
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    z-index:1;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position:top center;
+    transition:all 5s ease;
+    animation: infinite backgroundImage 10s;
+}
+@keyframes backgroundImage {
+    0%{background-position:top center;}
+    50%{background-position:bottom center;}
+    100%{background-position:top center;}
+}
+
+
+.portfolioBoxInImg:before{
+    content:'';
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    z-index:2;
+    background:rgba(0,0,0,0);
+    transition:all 1s ease;
+}
+.portfolioBoxIn:hover .portfolioBoxInImg:before{
+    background:rgba(50,0,0,0.5);
+    
+}
+.portfolioBoxInDesc{
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    z-index:3;
+    font-size:32px;
+    font-weight:bold;
+    color:#fff ;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transform:scale(.1);
+    transition:all 2s ease;
+}
+.portfolioBoxIn:hover .portfolioBoxInDesc{
+    opacity:1;
+    transform:scale(1);
+}

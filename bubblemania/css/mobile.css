@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1500px) {
+    .arrowBtn{
+        width:100px;
+    }
+    .lokalizacja{
+        flex-direction: column;
+        padding: 100px;
+        background: rgb(255,55,201);
+        background: -moz-radial-gradient(circle, rgba(255,55,201,1) 80%, rgba(255,255,255,1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(255,55,201,1) 80%, rgba(255,255,255,1) 100%);
+        background: radial-gradient(circle, rgba(255,55,201,1) 80%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff37c9",endColorstr="#ffffff",GradientType=1);
+    }
+    .lokalizacjaText{
+        margin-top:40px ;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .contactBox{
+        
+        flex-direction: column;
+        align-items: stretch;
+        
+        padding: 50px;
+        height: auto;
+    }
+    .contactLogo{
+        position: relative;
+        height: 150px;
+        width: 290px;
+        margin: auto;
+        
+    }
+    .contact{
+        margin-top: 20px;
+        font-size: 30px;
+        padding:30 ;
+        
+      }
+}
+@media only screen and (max-width: 1200px) {
+    .menu{
+        width:100vw;
+        padding-top:100px;
+        padding-left: 0;
+    }
+    .logoImg{
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    .leftBtn{
+        left:0;
+        padding:0 40vw 0   30vw;
+        margin-left:-30vw;
+    }
+    .rightBtn{
+        right:0;
+        padding:0  30vw 0 40vw;
+        margin-right:-30vw;
+    }
+    #bubble21{
+        top:100px;
+        left:-80px;
+        
+        background-color: #c6ffe2;
+      }
+      #bubble22{
+        top:400px;
+        right:-80px;
+        background-color: #e8a3ff;
+      }
+      #bubble23{
+        top:900px;
+        left:-80px;
+        background-color: #fef8b2;
+      }
+      #bubble24{
+        top:1200px;
+        right:-80px;
+        background-color: #ff6fb4;
+      }
+}   
+
+
+
+@media only screen and (max-width: 1080px) {
+    .sliderBox{
+        transform: scale(0.8) ;
+        top:200px;
+        left:10%;
+    }
+    
+}
+
+
+
+@media only screen and (max-height: 1000px) {
+    .sliderBox{
+        transform: scale(0.8) ;
+        top:200px;
+        left:10%;
+    }
+    .bubbleMenuImg{
+        height: 100%;
+    }
+}
+@media only screen and (max-height: 850px) {
+    .waveImg{
+        height: 50px;
+    }
+}
